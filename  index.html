@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список справ (REST API & Fetch)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📝 Список справ (REST API)</h1>
+
+        <!-- Форма додавання нового завдання -->
+        <form id="todo-form">
+            <input type="text"
+                   id="todo-input"
+                   placeholder="Введіть текст завдання..."
+                   autocomplete="off"
+                   required>
+            <button type="submit" id="add-btn">Додати</button>
+        </form>
+
+        <!-- Повідомлення про помилку -->
+        <div id="error-message" class="error-message hidden"></div>
+
+        <!-- Індикатор завантаження -->
+        <div id="loader" class="loader hidden">Завантаження...</div>
+
+        <!-- Інформаційна панель -->
+        <div class="info-bar">
+            <span>Усього завдань: <strong id="total-count">0</strong></span>
+            <span>Виконано: <strong id="completed-count">0</strong></span>
+        </div>
+
+        <!-- Список завдань -->
+        <ul id="todo-list" class="todo-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
